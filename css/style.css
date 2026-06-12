@@ -1,0 +1,747 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+color: #333;
+line-height: 1.6;
+}
+
+/* HEADER */
+
+header {
+background: #002d62;
+padding: 15px 50px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.logo-container {
+display: flex;
+align-items: center;
+gap: 25px;
+}
+
+.logo-container img {
+width: 140px;
+height: 140px;
+object-fit: contain;
+}
+
+.company-name h2 {
+    color: white;
+    font-size: 34px;
+    font-weight: bold;
+    margin: 0;
+}
+nav a {
+color: white;
+text-decoration: none;
+margin-left: 25px;
+font-weight: bold;
+}
+
+nav a:hover {
+color: #f4c542;
+}
+
+/* HERO */
+
+.hero {
+position: relative;
+height: 90vh;
+background-image: url("../images/hero.jpg.jpg");
+background-size: cover;
+background-position: center;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.55);
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+text-align: center;
+max-width: 900px;
+color: white;
+padding: 20px;
+}
+
+.hero-content h1 {
+font-size: 42px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.hero-content p {
+font-size: 22px;
+margin-bottom: 35px;
+}
+
+/* BUTTONS */
+
+.btn {
+display: inline-block;
+background: #f4c542;
+color: black;
+text-decoration: none;
+padding: 15px 30px;
+border-radius: 5px;
+font-weight: bold;
+}
+
+.btn:hover {
+background: #ddb138;
+}
+
+.btn-secondary {
+display: inline-block;
+margin-top: 20px;
+background: #002d62;
+color: white;
+text-decoration: none;
+padding: 12px 25px;
+border-radius: 5px;
+}
+
+/* ABOUT PREVIEW */
+
+.about-preview {
+padding: 60px 50px;
+text-align: center;
+}
+
+.about-preview h2 {
+color: #002d62;
+margin-bottom: 20px;
+}
+
+.about-preview p {
+max-width: 900px;
+margin: auto;
+}
+
+/* INDUSTRIES */
+
+.industries {
+background: #f5f5f5;
+padding: 80px 50px;
+text-align: center;
+}
+
+.industries h2 {
+color: #002d62;
+margin-bottom: 40px;
+}
+
+.industry-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.industry-card {
+background: white;
+width: 260px;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+font-weight: bold;
+}
+
+/* WHY US */
+
+.why-us {
+padding: 80px 50px;
+text-align: center;
+}
+
+.why-us h2 {
+color: #002d62;
+margin-bottom: 40px;
+}
+
+.why-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+}
+
+.why-card{
+background:#002d62;
+color:white;
+width:260px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.why-card:hover{
+transform:translateY(-5px);
+}
+
+/* PAGE BANNER */
+
+.page-banner {
+height: 50vh;
+background-image: url("../images/aviation.jpg.jpg");
+background-size: cover;
+background-position: center;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.banner-overlay {
+position: absolute;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,0.55);
+}
+
+.banner-content {
+position: relative;
+z-index: 2;
+text-align: center;
+color: white;
+}
+
+.banner-content h1 {
+font-size: 45px;
+margin-bottom: 15px;
+}
+
+/* ABOUT PAGE */
+
+.about-section {
+padding: 50px 30px 30px 50px;
+text-align: center;
+}
+
+.about-section h2 {
+color: #002d62;
+margin-bottom: 25px;
+}
+
+.about-section p {
+max-width: 1000px;
+margin: auto;
+margin-bottom: 20px;
+}
+
+.vision-mission {
+display: flex;
+gap: 30px;
+padding: 50px;
+background: #f5f5f5;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.vm-box {
+background: white;
+padding: 30px;
+width: 450px;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.vm-box h2 {
+color: #002d62;
+margin-bottom: 15px;
+}
+
+.core-values {
+padding: 80px 50px;
+text-align: center;
+}
+
+.core-values h2 {
+color: #002d62;
+margin-bottom: 40px;
+}
+
+.values-grid {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.value-card {
+background: #002d62;
+color: white;
+padding: 20px;
+width: 220px;
+border-radius: 8px;
+font-weight: bold;
+}
+
+/* SERVICES */
+
+.services-page {
+padding: 80px 50px;
+text-align: center;
+}
+
+.services-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 30px;
+}
+
+.service-card {
+background: white;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+color: #002d62;
+margin-bottom: 15px;
+}
+
+/* CONTACT */
+
+.contact-section {
+padding: 80px 50px;
+text-align: center;
+}
+
+.contact-grid {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+margin-top: 40px;
+}
+
+.contact-card{
+background:white;
+width:250px;
+padding:30px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+
+.contact-card h3 {
+color: #002d62;
+margin-bottom: 15px;
+}
+
+.contact-form-section {
+background: #f5f5f5;
+padding: 80px 50px;
+text-align: center;
+}
+
+.contact-form {
+max-width: 700px;
+margin: auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+padding: 15px;
+margin-bottom: 15px;
+border: 1px solid #ddd;
+border-radius: 5px;
+}
+
+.contact-form textarea {
+height: 150px;
+resize: none;
+}
+
+/* STATS SECTION */
+
+.stats{
+background:#002d62;
+padding:80px 50px;
+}
+
+.stats-container{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.stat-box{
+text-align:center;
+color:white;
+width:220px;
+}
+
+.stat-box h2{
+font-size:48px;
+color:#f4c542;
+margin-bottom:10px;
+}
+
+.stat-box p{
+font-size:18px;
+}
+
+/* FEATURED SERVICES */
+
+.featured-services{
+padding:80px 50px;
+text-align:center;
+}
+
+.featured-services h2{
+color:#002d62;
+margin-bottom:40px;
+}
+
+.services-highlight{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+}
+
+.service-highlight-card{
+background:white;
+width:260px;
+padding:25px;
+border-radius:10px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+}
+.service-highlight-card{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.service-highlight-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.service-highlight-card:hover h3{
+    color:#f4c542;
+}
+
+.service-highlight-card h3{
+color:#002d62;
+margin-bottom:15px;
+}
+
+
+/* CTA */
+
+.cta {
+background: #002d62;
+color: white;
+text-align: center;
+padding: 80px 50px;
+}
+
+.cta h2 {
+margin-bottom: 20px;
+}
+
+.cta p {
+margin-bottom: 30px;
+}
+
+/* ABOUT PAGE */
+
+.about-section{
+padding:60px 50px;
+text-align:center;
+}
+
+.about-section h2{
+color:#002d62;
+margin-bottom:25px;
+}
+
+.about-section p{
+max-width:1000px;
+margin:auto;
+margin-bottom:20px;
+}
+
+.about-company{
+padding:60px 50px;
+text-align:center;
+}
+
+.about-company h2{
+color:#002d62;
+margin-bottom:40px;
+}
+
+.vision-mission{
+display:flex;
+gap:30px;
+padding:60px 50px;
+background:#f5f5f5;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.core-values{
+padding:60px 50px;
+text-align:center;
+}
+
+.why-us{
+padding:60px 50px;
+text-align:center;
+}
+
+.industries{
+background:#f5f5f5;
+padding:60px 50px;
+text-align:center;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px){
+
+    header{
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .logo-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .company-name h2{
+        font-size: 20px;
+    }
+
+    .company-name p{
+        font-size: 11px;
+        letter-spacing: 2px;
+    }
+
+    .company-name h2{
+    font-size: 22px;
+    text-align: center;
+}
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    nav a{
+        display: inline-block;
+        margin: 0;
+    }
+
+    .page-banner{
+        height: 35vh;
+    }
+
+    .banner-content h1{
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .hero-content h1{
+        font-size: 20px;
+        line-height: 1.4;
+    }
+
+    .hero-content p{
+        font-size: 16px;
+    }
+
+    .industry-grid,
+    .why-grid,
+    .contact-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vision-mission{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vm-box{
+        width: 100%;
+    }
+}
+
+
+.btn-secondary{
+    display:inline-block;
+    margin-top:20px;
+    background:white;
+    color:#002d62;
+    text-decoration:none;
+    padding:12px 25px;
+    border-radius:5px;
+    font-weight:bold;
+    border:2px solid white;
+}
+
+.btn-secondary:hover{
+    background:#f4c542;
+    color:black;
+}
+.competitive-edge{
+    padding:80px 50px;
+    background:#f5f5f5;
+    text-align:center;
+}
+
+.competitive-edge h2{
+    color:#002d62;
+    margin-bottom:40px;
+}
+
+.edge-grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.edge-card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    font-weight:bold;
+}
+.compliance{
+background:#002d62;
+color:white;
+text-align:center;
+padding:80px 50px;
+}
+
+.compliance h2{
+margin-bottom:25px;
+color:#f4c542;
+}
+
+.compliance p{
+max-width:900px;
+margin:auto;
+font-size:18px;
+}
+
+.contact-card a{
+    text-decoration:none;
+    color:#333;
+    font-weight:500;
+}
+
+.contact-card a:hover{
+    color:#002d62;
+}
+.about-company{
+    padding:80px 50px;
+    text-align:center;
+}
+
+.about-company h2{
+    color:#002d62;
+    margin-bottom:40px;
+}
+/* FOOTER */
+
+footer{
+background:#001a36;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.footer-content{
+max-width:900px;
+margin:auto;
+}
+
+.footer-content h3{
+margin-bottom:15px;
+color:#f4c542;
+}
+
+.footer-content p{
+margin-bottom:10px;
+}
+
+.service-card{
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-5px);
+}
+.service-card{
+    min-height:250px;
+}
+footer{
+    background:#001a3d;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.footer-content{
+    max-width:900px;
+    margin:auto;
+}
+
+.footer-content h3{
+    color:#f4c542;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.footer-content p{
+    margin-bottom:10px;
+}
+
+footer hr{
+    margin:25px auto;
+    width:80%;
+    border:1px solid rgba(255,255,255,0.2);
+}
+.service-card,
+.contact-card,
+.industry-card,
+.edge-card{
+    transition: all 0.3s ease;
+}
+
+.service-card:hover,
+.contact-card:hover,
+.industry-card:hover,
+.edge-card:hover{
+    transform: translateY(-5px);
+}
