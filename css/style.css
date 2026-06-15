@@ -540,9 +540,10 @@ text-align:center;
     }
 
     .company-name p{
-        font-size: 11px;
-        letter-spacing: 2px;
-    }
+    font-size:18px;
+    letter-spacing:3px;
+    color:#666;
+}
 
     .company-name h2{
     font-size: 22px;
