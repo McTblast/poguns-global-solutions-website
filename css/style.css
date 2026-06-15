@@ -520,6 +520,9 @@ text-align:center;
 
 @media (max-width: 768px){
 
+    .services-gallery img{
+    width:100%;
+}
     header{
         flex-direction: column;
         padding: 20px;
@@ -559,9 +562,8 @@ text-align:center;
     }
 
     .page-banner{
-        height: 35vh;
-    }
-
+    height: 150px;
+}
     .banner-content h1{
         font-size: 22px;
         line-height: 1.3;
@@ -744,4 +746,92 @@ footer hr{
 .industry-card:hover,
 .edge-card:hover{
     transform: translateY(-5px);
+}
+.service-card,
+.industry-card,
+.contact-card,
+.edge-card,
+.service-highlight-card{
+    transition: all 0.3s ease;
+}
+
+.service-card:hover,
+.industry-card:hover,
+.contact-card:hover,
+.edge-card:hover,
+.service-highlight-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+section{
+    position:relative;
+}
+
+section:not(:last-child){
+    border-bottom:1px solid #f1f1f1;
+}
+nav a.active{
+    color:#f4c542;
+}
+.about-image{
+    text-align:center;
+    margin:40px 0;
+}
+
+.about-image img{
+    width:100%;
+    max-width:900px;
+    border-radius:10px;
+}
+/* SLIDESHOW BANNER */
+
+.slideshow-banner{
+    position:relative;
+    height:400px;
+    overflow:hidden;
+}
+
+.slideshow{
+    position:absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    transition:opacity 1.5s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+.banner-content{
+    position:relative;
+    z-index:2;
+}
+.services-gallery{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:40px;
+    flex-wrap:wrap;
+}
+
+.services-gallery img{
+    width:30%;
+    min-width:280px;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.services-gallery img:hover{
+    transform:translateY(-5px);
 }
