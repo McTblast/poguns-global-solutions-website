@@ -27,8 +27,8 @@ gap: 25px;
 }
 
 .logo-container img {
-width: 140px;
-height: 140px;
+width: 180px;
+height: 180px;
 object-fit: contain;
 }
 
@@ -173,21 +173,28 @@ color: #002d62;
 margin-bottom: 40px;
 }
 
-.why-grid {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
+.why-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
 }
 
 .why-card{
-background:#002d62;
-color:white;
-width:260px;
-padding:25px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
-transition:0.3s;
+    background:#002d62;
+    color:white;
+    width:260px;
+    height:80px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+    transition:0.3s;
 }
 
 .why-card:hover{
@@ -291,32 +298,39 @@ width: 220px;
 border-radius: 8px;
 font-weight: bold;
 }
-
 /* SERVICES */
 
 .services-page {
-padding: 80px 50px;
-text-align: center;
+    padding: 80px 50px;
+    text-align: center;
 }
 
 .services-grid {
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
 }
 
 .service-card {
-background: white;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
 .service-card h3 {
-color: #002d62;
-margin-bottom: 15px;
+    color: #002d62;
+    margin-bottom: 15px;
 }
-
+.services-grid-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.services-grid-bottom .service-card {
+    width: 420px;
+}
 /* CONTACT */
 
 .contact-section {
@@ -519,11 +533,10 @@ text-align:center;
 /* MOBILE */
 
 @media (max-width: 768px){
-
     .services-gallery img{
     width:100%;
-}
-    header{
+    }
+        header{
         flex-direction: column;
         padding: 20px;
         text-align: center;
@@ -540,9 +553,13 @@ text-align:center;
     }
 
     .company-name p{
+    color:#f4c542;
     font-size:18px;
-    letter-spacing:3px;
-    color:#666;
+    font-weight:600;
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-top:5px;
+}
 }
 
     .company-name h2{
@@ -563,7 +580,7 @@ text-align:center;
     }
 
     .page-banner{
-    height: 150px;
+    height: 600px;
 }
     .banner-content h1{
         font-size: 22px;
@@ -580,11 +597,13 @@ text-align:center;
     }
 
     .industry-grid,
-    .why-grid,
-    .contact-grid{
-        flex-direction: column;
-        align-items: center;
-    }
+    .why-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
 
     .vision-mission{
         flex-direction: column;
@@ -826,13 +845,13 @@ nav a.active{
 .services-gallery img{
     width:30%;
     min-width:280px;
-    height:250px;
+    height:350px;
     object-fit:cover;
     border-radius:10px;
     box-shadow:0 4px 15px rgba(0,0,0,0.1);
     transition:0.3s;
-}
-
+    }
+object-position: bottom;
 .services-gallery img:hover{
     transform:translateY(-5px);
 }
