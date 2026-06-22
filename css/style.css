@@ -855,3 +855,48 @@ object-position: bottom;
 .services-gallery img:hover{
     transform:translateY(-5px);
 }
+.corporate-profile {
+    text-align: center;
+    padding: 10px 10px;
+}
+
+.corporate-profile h2 {
+    margin-bottom: 20px;
+}
+
+.corporate-profile p {
+    max-width: 700px;
+    margin: 0 auto 30px;
+    line-height: 1.8;
+}
+
+.corporate-profile .btn {
+    display: inline-block;
+}
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    min-width: 220px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 12px 15px;
+    color: #002d62;
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}

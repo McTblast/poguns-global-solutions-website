@@ -98,23 +98,37 @@ info@poguns.com
 
     <h2>Send Us A Message</h2>
 
-    <form class="contact-form">
+<form class="contact-form"
+      action="https://formspree.io/f/xykqyjen"
+      method="POST">
 
-        <input type="text" placeholder="Full Name" required>
+    <input
+        type="text"
+        name="name"
+        placeholder="Full Name"
+        required>
 
-        <input type="email" placeholder="Email Address" required>
+    <input
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        required>
 
-        <input type="text" placeholder="Subject">
+    <input
+        type="text"
+        name="subject"
+        placeholder="Subject">
 
-        <textarea placeholder="Your Message"></textarea>
+    <textarea
+        name="message"
+        placeholder="Your Message"
+        required></textarea>
 
-        <button type="submit" class="btn">
-            Send Message
-        </button>
+    <button type="submit" class="btn">
+        Send Message
+    </button>
 
-    </form>
-
-</section>
+</form>
 
 <section class="why-us">
    
@@ -149,14 +163,13 @@ info@poguns.com
     <h2>Let's Build Something Great Together</h2>
 
     <p>
-        Whether you need consultancy, procurement,
-        logistics support, construction services or
-        strategic business solutions, POGUNS is ready
-        to help.
+        Ready to discuss your project or business needs?
+        Contact our team today and let's explore how
+        POGUNS can support your goals.
     </p>
 
-    <a href="company-profile.pdf" class="btn">
-        Download Company Profile
+    <a href="mailto:info@poguns.org" class="btn">
+        Contact Us Today
     </a>
 
 </section>
